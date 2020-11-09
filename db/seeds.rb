@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#hospitals
+@greys = Hospital.create!(name: "Grey Sloan Memorial Hospital")
+
+@general = Hospital.create!(name: "County General")
+
+#doctors
+@meredith = Doctor.create!(name: "Meridith Grey", specialty: "General Surgery", university: "Dartmouth", hospital_id: @greys.id)
+
+@teddy = Doctor.create!(name: "Teddy Altman", specialty: "Cardiothoracic Surgery", university: "George Washington University", hospital_id: @greys.id)
