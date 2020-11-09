@@ -1,0 +1,12 @@
+
+<h2> <%= "Hospital: #{@hospital.name}" %></h2>
+<p><%= "Number of Doctors on Staff: #{@hospital.total_doctors}" %></p>
+
+<section>
+  <h3>Universities Attended:</h3>
+      <ol>
+        <% @hospital.unique_universities.map do |university| %>
+          <li><%= university %></li>
+        <% end %>
+      </ol>
+</section>

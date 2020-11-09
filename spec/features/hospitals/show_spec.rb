@@ -1,11 +1,3 @@
-# User Story 2, Hospital Show Page
-#
-# As a visitor
-# When I visit a hospital's show page
-# I see the hospital's name
-# And I see the number of doctors that work at this hospital
-# And I see a unique list of universities that this hospital's doctors attended
-
 require 'rails_helper'
 
 RSpec.describe "As a visitor" do
@@ -15,7 +7,7 @@ RSpec.describe "As a visitor" do
 
       @meredith = Doctor.create!(name: "Meridith Grey", specialty: "General Surgery", university: "Dartmouth", hospital_id: @greys.id)
       @teddy = Doctor.create!(name: "Teddy Altman", specialty: "Cardiothoracic Surgery", university: "George Washington University", hospital_id: @greys.id)
-      @knox = Doctor.create!(name: "Knox", specialty: "Anesthesiology", university: "University of Colorado School of Medicine", hospital_id: @greys.id)
+      @knox = Doctor.create!(name: "Knox", specialty: "Anesthesiology", university: "Dartmouth", hospital_id: @greys.id)
     end
 
     it "can see hospital's name, number of doctors that work at this hospital, and unique list of universities those doctors attend" do
