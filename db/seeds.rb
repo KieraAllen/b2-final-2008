@@ -15,3 +15,5 @@
 @meredith = Doctor.create!(name: "Meridith Grey", specialty: "General Surgery", university: "Dartmouth", hospital_id: @greys.id)
 
 @teddy = Doctor.create!(name: "Teddy Altman", specialty: "Cardiothoracic Surgery", university: "George Washington University", hospital_id: @greys.id)
+
+@knox = Doctor.create!(name: "Knox", specialty: "Anesthesiology", university: "Dartmouth", hospital_id: @greys.id)
